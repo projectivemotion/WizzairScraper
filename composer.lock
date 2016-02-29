@@ -1,0 +1,101 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1b53c879e5f0f418bbc19fa6924b108b",
+    "content-hash": "d530f45bee6d9f94e1bec2811d943253",
+    "packages": [
+        {
+            "name": "atofighi/phpquery",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ATofighi/phpQuery.git",
+                "reference": "6b8c77ce7d7d1bdc8ed2381b273f22ae87233b54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ATofighi/phpQuery/zipball/6b8c77ce7d7d1bdc8ed2381b273f22ae87233b54",
+                "reference": "6b8c77ce7d7d1bdc8ed2381b273f22ae87233b54",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "phpQuery/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobiasz Cudnik",
+                    "email": "tobiasz.cudnik@gmail.com",
+                    "homepage": "https://github.com/TobiaszCudnik",
+                    "role": "Developer"
+                },
+                {
+                    "name": "didier Belot",
+                    "role": "Packager"
+                },
+                {
+                    "name": "AliReza Tofighi",
+                    "role": "Developer"
+                }
+            ],
+            "description": "phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library",
+            "homepage": "https://github.com/ATofighi/phpQuery/",
+            "time": "2015-11-10 17:41:36"
+        },
+        {
+            "name": "projectivemotion/PhpScraperTools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/projectivemotion/PhpScraperTools.git",
+                "reference": "b177b5407749ddfa867bee201a1c51eb09b64280"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/projectivemotion/PhpScraperTools/zipball/b177b5407749ddfa867bee201a1c51eb09b64280",
+                "reference": "b177b5407749ddfa867bee201a1c51eb09b64280",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectivemotion\\PhpScraperTools\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amado Martinez",
+                    "email": "amado@projectivemotion.com"
+                }
+            ],
+            "description": "PHP Curl Wrapper. Written specifically for scraping purposes.",
+            "support": {
+                "source": "https://github.com/projectivemotion/PhpScraperTools/tree/master",
+                "issues": "https://github.com/projectivemotion/PhpScraperTools/issues"
+            },
+            "time": "2016-02-29 16:46:31"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "projectivemotion/phpscrapertools": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
