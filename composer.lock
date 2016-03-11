@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b53c879e5f0f418bbc19fa6924b108b",
-    "content-hash": "d530f45bee6d9f94e1bec2811d943253",
+    "hash": "e1eeba1bca6aef911a3f31f1a0082d88",
+    "content-hash": "e2684abbab006f6aea9e0f7c68e9b8fe",
     "packages": [
         {
             "name": "atofighi/phpquery",
@@ -53,16 +53,16 @@
         },
         {
             "name": "projectivemotion/PhpScraperTools",
-            "version": "dev-master",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projectivemotion/PhpScraperTools.git",
-                "reference": "b177b5407749ddfa867bee201a1c51eb09b64280"
+                "reference": "bcbbc5122f028dc3e483f41006e00f00d8fc27db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projectivemotion/PhpScraperTools/zipball/b177b5407749ddfa867bee201a1c51eb09b64280",
-                "reference": "b177b5407749ddfa867bee201a1c51eb09b64280",
+                "url": "https://api.github.com/repos/projectivemotion/PhpScraperTools/zipball/bcbbc5122f028dc3e483f41006e00f00d8fc27db",
+                "reference": "bcbbc5122f028dc3e483f41006e00f00d8fc27db",
                 "shasum": ""
             },
             "type": "library",
@@ -82,18 +82,16 @@
             ],
             "description": "PHP Curl Wrapper. Written specifically for scraping purposes.",
             "support": {
-                "source": "https://github.com/projectivemotion/PhpScraperTools/tree/master",
+                "source": "https://github.com/projectivemotion/PhpScraperTools/tree/0.0.2",
                 "issues": "https://github.com/projectivemotion/PhpScraperTools/issues"
             },
-            "time": "2016-02-29 16:46:31"
+            "time": "2016-03-11 07:17:21"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "projectivemotion/phpscrapertools": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

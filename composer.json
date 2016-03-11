@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "projectivemotion/PhpScraperTools": "dev-master",
+    "projectivemotion/PhpScraperTools": "0.0.2",
     "atofighi/phpquery": "2.0.1"
   },
   "autoload": {
