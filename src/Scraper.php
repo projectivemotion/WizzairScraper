@@ -152,7 +152,6 @@ class Scraper extends BaseScraper
 
             yield $flight;
         }
-        return;
     }
 
     public function isRoundTrip()
