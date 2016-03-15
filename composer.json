@@ -1,22 +1,19 @@
 {
-  "name": "projectivemotion/WizzairScraper",
+  "name": "projectivemotion/wizzair-scraper",
   "description": "Wizzair.com Flights Information Scraper",
   "minimum-stability": "stable",
+  "keywords": ["airline", "scraper","wizzair"],
   "license": "MIT",
   "authors": [
     {
       "name": "Amado Martinez",
-      "email": "amado@projectivemotion.com"
-    }
-  ],
-  "repositories": [
-    {
-      "url": "https://github.com/projectivemotion/PhpScraperTools",
-      "type": "vcs"
+      "email": "amado@projectivemotion.com",
+      "role": "Developer",
+      "homepage": "http://projectivemotion.com"
     }
   ],
   "require": {
-    "projectivemotion/PhpScraperTools": "0.0.2",
+    "projectivemotion/php-scraper-tools": "0.1.*",
     "atofighi/phpquery": "2.0.1"
   },
   "autoload": {
