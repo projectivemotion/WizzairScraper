@@ -11,12 +11,46 @@ Wizzair Airline Flights Price Scraper
 ### Installation
 
 > git clone https://github.com/projectivemotion/wizzair-scraper.git
+> composer update
 
 ## Usage
 
 See `demo/` directory. for an example
 
-> php -f vendor/projectivemotion/wizzair-scraper/demo/wizzair.php
+Usage: demo/wizzair.php origin destination departure return
+
+Example: 
+> php -f demo/wizzair.php SKG BUD 2016-06-08 2016-06-15
+
+    stdClass Object
+    (
+        [outbound] => stdClass Object
+            (
+                [disabled] => 
+                [date] => 2016-06-08
+                [departure_stamp] => 2016-06-08T20:55:00
+                [arrival_stamp] => 2016-06-08T21:30:00
+                [flight_number] => W6_2448
+                [basic] => €9.99
+                [basic_discount] => €9.99
+                [plus] => €69.49
+                [plus_discount] => €69.49
+            )
+    
+        [inbound] => stdClass Object
+            (
+                [disabled] => 
+                [date] => 2016-06-15
+                [departure_stamp] => 2016-06-15T17:45:00
+                [arrival_stamp] => 2016-06-15T20:20:00
+                [flight_number] => W6_2447
+                [basic] => €39.99
+                [basic_discount] => €29.99
+                [plus] => €99.49
+                [plus_discount] => €89.49
+            )
+    
+    )
 
 # License
 The MIT License (MIT)
