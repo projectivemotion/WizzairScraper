@@ -10,8 +10,8 @@ Wizzair Airline Flights Price Scraper
 
 ### Installation
 
-> git clone https://github.com/projectivemotion/wizzair-scraper.git
-> composer update
+    git clone https://github.com/projectivemotion/wizzair-scraper.git
+    composer update
 
 ## Usage
 
