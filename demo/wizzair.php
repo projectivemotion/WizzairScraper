@@ -19,7 +19,8 @@ foreach($autoload_files as $autoload_file)
 // end autoloader finder
 
 if($argc < 5)
-    die("$argv[0] origin:ABZ destination:GDN departure:2016-05-03 return:2016-05-07");
+    die("Usage:\n\t$argv[0] origin destination outbound-date inbound-date\n" .
+            "Example:\n\t$argv[0] BFS VNO 2016-11-21 2016-11-25\n\n");
 
 $wizzair    =   new \projectivemotion\WizzairScraper\Scraper();
 $wizzair->cacheOn();
@@ -32,4 +33,4 @@ $wizzair->setReturnDate($argv[4]);
 
 $flights    =   $wizzair->getFlights($argv[1], $argv[2]);
 
-print_r($flights);
+var_export($flights);

@@ -13,8 +13,7 @@
     }
   ],
   "require": {
-    "projectivemotion/php-scraper-tools": "~0",
-    "atofighi/phpquery": "2.0.1"
+    "projectivemotion/php-scraper-tools": "~0"
   },
   "autoload": {
     "psr-4": {
