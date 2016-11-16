@@ -1,5 +1,6 @@
 # Wizzair-Scraper
 Wizzair Airline Flights Price Scraper V0.1.0
+[![Build Status](https://travis-ci.org/projectivemotion/wizzair-scraper.svg?branch=master)](https://travis-ci.org/projectivemotion/wizzair-scraper)
 
 Last Updated: 2016-11-15
 
