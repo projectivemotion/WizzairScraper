@@ -39,4 +39,4 @@ $wizzair->setDepartureDate($departure_date);
 $wizzair->setReturnDate($return_date);
 $flights    =   $wizzair->getFlights($origin, $destination);
 
-var_export($flights);
+echo json_encode($flights, JSON_PRETTY_PRINT);

@@ -10,12 +10,15 @@ Last Updated: 2016-11-21
 * Please do not be stupid!
 * Check out my other projects: [Agoda-Scraper](https://github.com/projectivemotion/agoda-scraper), [Hotelscom-Scraper](https://github.com/projectivemotion/hotelscom-scraper), [EasyJet-Scraper](https://github.com/projectivemotion/easyjet-scraper), [Planitour-Scraper](https://github.com/projectivemotion/planitour-scraper), [Xgbs-Soap Client](https://github.com/projectivemotion/xgbs-soap)
 
-### Installation
+### Manual Installation
     git clone https://github.com/projectivemotion/wizzair-scraper.git
     cd wizzair-scraper && composer update
+    
+### Composer Installation
+    composer require projectivemotion/php-scraper-tools
 
 ### Requirements
-PHP 5.6
+    PHP 5.6
 
 
 ### Usage
