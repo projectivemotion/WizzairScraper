@@ -22,15 +22,21 @@ if($argc < 5)
     die("Usage:\n\t$argv[0] origin destination outbound-date inbound-date\n" .
             "Example:\n\t$argv[0] BFS VNO 2016-11-21 2016-11-25\n\n");
 
+$origin = $argv[1];
+$destination = $argv[2];
+$departure_date = $argv[3];
+$return_date = $argv[4];
+
+echo "Using Parameters: $origin - $destination / $departure_date - $return_date\n\n";
+
 $wizzair    =   new \projectivemotion\WizzairScraper\Scraper();
 $wizzair->cacheOff();
 $wizzair->verboseOff();
 
 $wizzair->setAdults(1);
 
-$wizzair->setDepartureDate($argv[3]);
-$wizzair->setReturnDate($argv[4]);
-
-$flights    =   $wizzair->getFlights($argv[1], $argv[2]);
+$wizzair->setDepartureDate($departure_date);
+$wizzair->setReturnDate($return_date);
+$flights    =   $wizzair->getFlights($origin, $destination);
 
 var_export($flights);

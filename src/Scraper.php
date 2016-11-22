@@ -104,7 +104,12 @@ class Scraper extends CacheScraper
             'infantCount'   =>  $this->getInfants()
         ];
         $array_source    =   $this->cache_get('/3.6.0/Api/search/search', json_encode($params) , true );
-        return json_decode($array_source , true);
+        $result =   json_decode($array_source , true);
+
+        if(!$result)
+            throw new \Exception($array_source);
+
+        return $result;
     }
 
     public function isRoundTrip()
@@ -118,9 +123,6 @@ class Scraper extends CacheScraper
         $home   =   $this->cache_get('/');
         $html_source    =   $this->makeRequest($origin, $destination);
 
-        if(is_array($html_source))
-            return $html_source;
-
-        throw new \Exception("Unknown data result.");
+        return $html_source;
     }
 }
