@@ -8,4 +8,4 @@ before_script:
   - composer install --prefer-source --no-interaction --dev
   - sleep 60
 
-script: php -f demo/wizzair.php BFS VNO 2016-11-21 2016-11-25
+script: php -f demo/wizzair.php BFS VNO $(date -d 'next friday' +%Y-%m-%d) $(date -d 'next monday' +%Y-%m-%d)

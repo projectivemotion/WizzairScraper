@@ -1,8 +1,8 @@
 # Wizzair-Scraper
-Wizzair Airline Flights Price Scraper V0.1.0
+Wizzair Airline Flights Price Scraper
 [![Build Status](https://travis-ci.org/projectivemotion/wizzair-scraper.svg?branch=master)](https://travis-ci.org/projectivemotion/wizzair-scraper)
 
-Last Updated: 2016-11-15
+Last Updated: 2016-11-21
 
 ## Use at your own risk!
 * I am not responsible for your use of this software.
@@ -12,9 +12,13 @@ Last Updated: 2016-11-15
 
 ### Installation
     git clone https://github.com/projectivemotion/wizzair-scraper.git
-    cd wizza-scraper && composer update
+    cd wizzair-scraper && composer update
 
-## Usage
+### Requirements
+PHP 5.6
+
+
+### Usage
 
 See `demo/` directory. for an example
 

@@ -23,7 +23,7 @@ if($argc < 5)
             "Example:\n\t$argv[0] BFS VNO 2016-11-21 2016-11-25\n\n");
 
 $wizzair    =   new \projectivemotion\WizzairScraper\Scraper();
-$wizzair->cacheOn();
+$wizzair->cacheOff();
 $wizzair->verboseOff();
 
 $wizzair->setAdults(1);
