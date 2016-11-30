@@ -12,6 +12,7 @@ use projectivemotion\PhpScraperTools\CacheScraper;
 
 class Scraper extends CacheScraper
 {
+    const version = '3.7.0';
     protected $protocol =   'https';
     protected $domain   =   'be.wizzair.com';
 
@@ -103,7 +104,7 @@ class Scraper extends CacheScraper
             'childCount'    =>  $this->getChildren(),
             'infantCount'   =>  $this->getInfants()
         ];
-        $array_source    =   $this->cache_get('/3.6.0/Api/search/search', json_encode($params) , true );
+        $array_source    =   $this->cache_get('/' . self::version . '/Api/search/search', json_encode($params) , true );
         $result =   json_decode($array_source , true);
 
         if(!$result)
