@@ -2,7 +2,7 @@
 Wizzair Airline Flights Price Scraper
 [![Build Status](https://travis-ci.org/projectivemotion/wizzair-scraper.svg?branch=master)](https://travis-ci.org/projectivemotion/wizzair-scraper)
 
-Last Updated: 2016-11-21
+Last Updated: 2016-11-30
 
 ## Use at your own risk!
 * I am not responsible for your use of this software.
@@ -15,8 +15,8 @@ Last Updated: 2016-11-21
     cd wizzair-scraper && composer update
     
 ### Composer Installation
-    composer require projectivemotion/php-scraper-tools
-
+    composer require projectivemotion/wizzair-scraper
+    
 ### Requirements
     PHP 5.6
 
@@ -29,266 +29,160 @@ Usage: demo/wizzair.php origin destination departure return
 
 Example: 
 ```
-~/projects/php/WizzairScraper $ php -f demo/wizzair.php BFS VNO 2016-11-21 2016-11-25
-array (
-  'outboundFlights' => 
-  array (
-    0 => 
-    array (
-      'departureStation' => 'BFS',
-      'arrivalStation' => 'VNO',
-      'carrierCode' => 'W6',
-      'flightNumber' => '8014',
-      'flightSellKey' => 'W6~8014~ ~~BFS~11/21/2016 20:00~VNO~11/22/2016 00:55~',
-      'departureDateTime' => '2016-11-21T20:00:00',
-      'arrivalDateTime' => '2016-11-22T00:55:00',
-      'fares' => 
-      array (
-        0 => 
-        array (
-          'fareSellKey' => '0~PW~~PWZZC~WZZC~~10~X',
-          'basePrice' => 
-          array (
-            'amount' => 17.489999999999998,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 17.489999999999998,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'BASIC',
-          'fareDiscountType' => 'none',
-          'wdc' => true,
-        ),
-        1 => 
-        array (
-          'fareSellKey' => '0~PW~~PWZZC~WZZC~~10~X',
-          'basePrice' => 
-          array (
-            'amount' => 90.989999999999995,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 54.240000000000002,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'PLUS',
-          'fareDiscountType' => 'none',
-          'wdc' => true,
-        ),
-        2 => 
-        array (
-          'fareSellKey' => '0~P~~PREG~REG1~~8~X',
-          'basePrice' => 
-          array (
-            'amount' => 25.989999999999998,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 25.989999999999998,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'BASIC',
-          'fareDiscountType' => 'none',
-          'wdc' => false,
-        ),
-        3 => 
-        array (
-          'fareSellKey' => '0~P~~PREG~REG1~~8~X',
-          'basePrice' => 
-          array (
-            'amount' => 99.489999999999995,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 62.740000000000002,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'PLUS',
-          'fareDiscountType' => 'none',
-          'wdc' => false,
-        ),
-      ),
-      'infantLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => true,
-      ),
-      'wheelchairLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => true,
-      ),
-      'oxyLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => true,
-      ),
-      'sportsEquipmentLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => false,
-      ),
-    ),
-  ),
-  'returnFlights' => 
-  array (
-    0 => 
-    array (
-      'departureStation' => 'VNO',
-      'arrivalStation' => 'BFS',
-      'carrierCode' => 'W6',
-      'flightNumber' => '8013',
-      'flightSellKey' => 'W6~8013~ ~~VNO~11/25/2016 18:15~BFS~11/25/2016 19:30~',
-      'departureDateTime' => '2016-11-25T18:15:00',
-      'arrivalDateTime' => '2016-11-25T19:30:00',
-      'fares' => 
-      array (
-        0 => 
-        array (
-          'fareSellKey' => '0~KW~~KWZZC~WZZC~~10~X',
-          'basePrice' => 
-          array (
-            'amount' => 52.990000000000002,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 52.990000000000002,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'BASIC',
-          'fareDiscountType' => 'none',
-          'wdc' => true,
-        ),
-        1 => 
-        array (
-          'fareSellKey' => '0~KW~~KWZZC~WZZC~~10~X',
-          'basePrice' => 
-          array (
-            'amount' => 126.48999999999999,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 89.739999999999995,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'PLUS',
-          'fareDiscountType' => 'none',
-          'wdc' => true,
-        ),
-        2 => 
-        array (
-          'fareSellKey' => '0~K~~KREG~REG1~~8~X',
-          'basePrice' => 
-          array (
-            'amount' => 61.990000000000002,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 61.990000000000002,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'BASIC',
-          'fareDiscountType' => 'none',
-          'wdc' => false,
-        ),
-        3 => 
-        array (
-          'fareSellKey' => '0~K~~KREG~REG1~~8~X',
-          'basePrice' => 
-          array (
-            'amount' => 135.49000000000001,
-            'currencyCode' => 'GBP',
-          ),
-          'discountedPrice' => 
-          array (
-            'amount' => 98.739999999999995,
-            'currencyCode' => 'GBP',
-          ),
-          'bundle' => 'PLUS',
-          'fareDiscountType' => 'none',
-          'wdc' => false,
-        ),
-      ),
-      'infantLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => true,
-      ),
-      'wheelchairLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => true,
-      ),
-      'oxyLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => true,
-      ),
-      'sportsEquipmentLimitExceeded' => 
-      array (
-        'limitExceeded' => false,
-        'isBlocking' => false,
-      ),
-    ),
-  ),
-  'outboundBundles' => 
-  array (
-    0 => 
-    array (
-      'code' => 'BASIC',
-      'ancillaryServices' => 
-      array (
-      ),
-    ),
-    1 => 
-    array (
-      'code' => 'PLUS',
-      'ancillaryServices' => 
-      array (
-        0 => 'seat-selection',
-        1 => 'small-cabin-bag',
-        2 => 'heavy-checked-in-bag',
-        3 => 'wizz-flex',
-        4 => 'priority-boarding',
-        5 => 'airport-checkin',
-      ),
-    ),
-  ),
-  'returnBundles' => 
-  array (
-    0 => 
-    array (
-      'code' => 'BASIC',
-      'ancillaryServices' => 
-      array (
-      ),
-    ),
-    1 => 
-    array (
-      'code' => 'PLUS',
-      'ancillaryServices' => 
-      array (
-        0 => 'seat-selection',
-        1 => 'small-cabin-bag',
-        2 => 'heavy-checked-in-bag',
-        3 => 'wizz-flex',
-        4 => 'priority-boarding',
-        5 => 'airport-checkin',
-      ),
-    ),
-  ),
-  'currencyCode' => 'GBP',
-  'arrivalStationCurrencyCode' => 'EUR',
-  'isDomestic' => false,
-)
+~/projects/php/WizzairScraper $ php -f demo/wizzair.php BFS VNO 2016-12-07 2016-12-09
+Using Parameters: BFS - VNO / 2016-12-07 - 2016-12-09
+
+{
+    "outboundFlights": [],
+    "returnFlights": [
+        {
+            "departureStation": "VNO",
+            "arrivalStation": "BFS",
+            "carrierCode": "W6",
+            "flightNumber": "8013",
+            "flightSellKey": "W6~8013~ ~~VNO~12\/09\/2016 18:15~BFS~12\/09\/2016 19:30~",
+            "departureDateTime": "2016-12-09T18:15:00",
+            "arrivalDateTime": "2016-12-09T19:30:00",
+            "fares": [
+                {
+                    "fareSellKey": "0~PW~~PWZZC~WZZC~~10~X",
+                    "basePrice": {
+                        "amount": 17.49,
+                        "currencyCode": "GBP"
+                    },
+                    "discountedPrice": {
+                        "amount": 17.49,
+                        "currencyCode": "GBP"
+                    },
+                    "bundle": "BASIC",
+                    "fareDiscountType": "none",
+                    "wdc": true
+                },
+                {
+                    "fareSellKey": "0~PW~~PWZZC~WZZC~~10~X",
+                    "basePrice": {
+                        "amount": 35.49,
+                        "currencyCode": "GBP"
+                    },
+                    "discountedPrice": {
+                        "amount": 35.49,
+                        "currencyCode": "GBP"
+                    },
+                    "bundle": "MIDDLE",
+                    "fareDiscountType": "none",
+                    "wdc": true
+                },
+                {
+                    "fareSellKey": "0~PW~~PWZZC~WZZC~~10~X",
+                    "basePrice": {
+                        "amount": 52.74,
+                        "currencyCode": "GBP"
+                    },
+                    "discountedPrice": {
+                        "amount": 52.74,
+                        "currencyCode": "GBP"
+                    },
+                    "bundle": "PLUS",
+                    "fareDiscountType": "none",
+                    "wdc": true
+                },
+                {
+                    "fareSellKey": "0~P~~PREG~REG1~~8~X",
+                    "basePrice": {
+                        "amount": 25.99,
+                        "currencyCode": "GBP"
+                    },
+                    "discountedPrice": {
+                        "amount": 25.99,
+                        "currencyCode": "GBP"
+                    },
+                    "bundle": "BASIC",
+                    "fareDiscountType": "none",
+                    "wdc": false
+                },
+                {
+                    "fareSellKey": "0~P~~PREG~REG1~~8~X",
+                    "basePrice": {
+                        "amount": 43.99,
+                        "currencyCode": "GBP"
+                    },
+                    "discountedPrice": {
+                        "amount": 43.99,
+                        "currencyCode": "GBP"
+                    },
+                    "bundle": "MIDDLE",
+                    "fareDiscountType": "none",
+                    "wdc": false
+                },
+                {
+                    "fareSellKey": "0~P~~PREG~REG1~~8~X",
+                    "basePrice": {
+                        "amount": 61.24,
+                        "currencyCode": "GBP"
+                    },
+                    "discountedPrice": {
+                        "amount": 61.24,
+                        "currencyCode": "GBP"
+                    },
+                    "bundle": "PLUS",
+                    "fareDiscountType": "none",
+                    "wdc": false
+                }
+            ],
+            "infantLimitExceeded": {
+                "limitExceeded": false,
+                "isBlocking": true
+            },
+            "wheelchairLimitExceeded": {
+                "limitExceeded": false,
+                "isBlocking": true
+            },
+            "oxyLimitExceeded": {
+                "limitExceeded": false,
+                "isBlocking": true
+            },
+            "sportsEquipmentLimitExceeded": {
+                "limitExceeded": false,
+                "isBlocking": false
+            }
+        }
+    ],
+    "outboundBundles": null,
+    "returnBundles": [
+        {
+            "code": "BASIC",
+            "ancillaryServices": [
+                "bundle-ancillary-online-check-in",
+                "bundle-ancillary-small-cabin-baggage"
+            ]
+        },
+        {
+            "code": "MIDDLE",
+            "ancillaryServices": [
+                "bundle-ancillary-online-check-in",
+                "bundle-ancillary-seat-selection",
+                "bundle-ancillary-large-cabin-baggage",
+                "bundle-ancillary-light-checked-in-baggage"
+            ]
+        },
+        {
+            "code": "PLUS",
+            "ancillaryServices": [
+                "bundle-ancillary-seat-selection",
+                "bundle-ancillary-large-cabin-baggage",
+                "bundle-ancillary-heavy-checked-in-baggage",
+                "bundle-ancillary-wizz-flex",
+                "bundle-ancillary-wizz-account-refund",
+                "bundle-ancillary-priority-boarding",
+                "bundle-ancillary-small-personal-item",
+                "bundle-ancillary-airport-check-in"
+            ]
+        }
+    ],
+    "currencyCode": "GBP",
+    "arrivalStationCurrencyCode": "EUR",
+    "isDomestic": false
+}
 ```
 # License
 The MIT License (MIT)
