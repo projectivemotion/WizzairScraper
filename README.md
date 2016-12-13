@@ -2,7 +2,7 @@
 Wizzair Airline Flights Price Scraper
 [![Build Status](https://travis-ci.org/projectivemotion/wizzair-scraper.svg?branch=master)](https://travis-ci.org/projectivemotion/wizzair-scraper)
 
-Last Updated: 2016-11-30
+Last Verified: 2016-12-13
 
 ## Use at your own risk!
 * I am not responsible for your use of this software.
