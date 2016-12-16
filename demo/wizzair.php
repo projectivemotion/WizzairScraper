@@ -37,6 +37,12 @@ $wizzair->setAdults(1);
 
 $wizzair->setDepartureDate($departure_date);
 $wizzair->setReturnDate($return_date);
-$flights    =   $wizzair->getFlights($origin, $destination);
-
-echo json_encode($flights, JSON_PRETTY_PRINT);
+try {
+    $flights = $wizzair->getFlights($origin, $destination);
+    echo json_encode($flights, JSON_PRETTY_PRINT);
+}catch(Exception $e)
+{
+    echo "An Error ocurred: ", $e->getMessage(), ". You may want to try changing search parameters.";
+    echo "\nConnection Info: ";
+    var_export($wizzair->getInfo());
+}

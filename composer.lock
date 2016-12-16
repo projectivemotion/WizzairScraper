@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6cc4d0e319b0d97cb667aa16a59a3c83",
-    "content-hash": "e4bcb3ba6f21699533b7d3d367b3070c",
+    "hash": "c1608267a22a767ff5dab103848ce06c",
+    "content-hash": "ac42919e5b522cdd89c810c1cb9c1744",
     "packages": [
         {
             "name": "projectivemotion/php-scraper-tools",
-            "version": "0.2.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projectivemotion/php-scraper-tools.git",
-                "reference": "e68f2f22f7c81ba5e24aeb4c535d80f47ea53ce5"
+                "reference": "1008ecc927c720441b8faa9ef62b607c07383e75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projectivemotion/php-scraper-tools/zipball/e68f2f22f7c81ba5e24aeb4c535d80f47ea53ce5",
-                "reference": "e68f2f22f7c81ba5e24aeb4c535d80f47ea53ce5",
+                "url": "https://api.github.com/repos/projectivemotion/php-scraper-tools/zipball/1008ecc927c720441b8faa9ef62b607c07383e75",
+                "reference": "1008ecc927c720441b8faa9ef62b607c07383e75",
                 "shasum": ""
             },
             "require-dev": {
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "PHP Curl Wrapper. Written specifically for scraping purposes.",
-            "time": "2016-06-27 23:27:15"
+            "time": "2016-11-30 15:36:39"
         }
     ],
     "packages-dev": [],

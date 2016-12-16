@@ -13,7 +13,7 @@
     }
   ],
   "require": {
-    "projectivemotion/php-scraper-tools": "~0"
+    "projectivemotion/php-scraper-tools": "~1"
   },
   "autoload": {
     "psr-4": {

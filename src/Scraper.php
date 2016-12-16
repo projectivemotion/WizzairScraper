@@ -108,7 +108,13 @@ class Scraper extends CacheScraper
         $result =   json_decode($array_source , true);
 
         if(!$result)
+        {
+            if($array_source == "")
+            {
+                throw new \Exception('The server returned a blank result.');
+            }
             throw new \Exception($array_source);
+        }
 
         return $result;
     }
