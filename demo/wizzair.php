@@ -34,6 +34,11 @@ $wizzair->cacheOff();
 $wizzair->verboseOff();
 
 $wizzair->setAdults(1);
+$wizzair->setCookieFileName(tempnam(sys_get_temp_dir(), 'wizzaircookie.'));
+
+$api_detected = $wizzair->detect_api_version();
+if($api_detected)
+    echo "Detected api version: {$wizzair->getApiVersion()}\n";
 
 $wizzair->setDepartureDate($departure_date);
 $wizzair->setReturnDate($return_date);

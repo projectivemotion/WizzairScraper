@@ -12,12 +12,13 @@ use projectivemotion\PhpScraperTools\CacheScraper;
 
 class Scraper extends CacheScraper
 {
-    const version = '3.7.1';
+    const default_api_version = '3.8.2';
     protected $protocol =   'https';
     protected $domain   =   'be.wizzair.com';
 
     protected $return_date      =   '';
     protected $departure_date   =   '';
+    protected $api_version;
 
     /**
      * Age 14+
@@ -36,6 +37,34 @@ class Scraper extends CacheScraper
      * @var integer
      */
     protected $infants = 0;
+
+    public function init()
+    {
+        $this->setApiVersion(self::default_api_version);
+        parent::init();
+    }
+
+    public function setApiVersion($api_version)
+    {
+        $this->api_version = $api_version;
+    }
+
+    public function getApiVersion()
+    {
+        return $this->api_version;
+    }
+
+    public function detect_api_version()
+    {
+        $pattern    =   "#https://{$this->domain}/([0-9\\.]*?)/Api#";
+        $home_page_response =   $this->cache_get('https://wizzair.com/');
+        if(preg_match($pattern, $home_page_response, $matches)){
+            $this->setApiVersion($matches[1]);
+            return true;
+        }
+        return false;
+    }
+
 
     public function setChildren($children)
     {
@@ -104,7 +133,7 @@ class Scraper extends CacheScraper
             'childCount'    =>  $this->getChildren(),
             'infantCount'   =>  $this->getInfants()
         ];
-        $array_source    =   $this->cache_get('/' . self::version . '/Api/search/search', json_encode($params) , true );
+        $array_source    =   $this->cache_get('/' . $this->getApiVersion() . '/Api/search/search', json_encode($params) , true );
         $result =   json_decode($array_source , true);
 
         if(!$result)
