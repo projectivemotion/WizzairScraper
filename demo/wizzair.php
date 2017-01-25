@@ -50,4 +50,5 @@ try {
     echo "An Error ocurred: ", $e->getMessage(), ". You may want to try changing search parameters.";
     echo "\nConnection Info: ";
     var_export($wizzair->getInfo());
+    exit(1);
 }
