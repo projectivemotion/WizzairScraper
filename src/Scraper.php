@@ -147,9 +147,9 @@ class Scraper extends CacheScraper
         {
             if($array_source == "")
             {
-                throw new \Exception('The server returned a blank result.');
+                throw new Exception('The server returned a blank result.');
             }
-            throw new \Exception($array_source);
+            throw new Exception($array_source);
         }
 
         return $result;
