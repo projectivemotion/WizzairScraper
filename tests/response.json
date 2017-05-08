@@ -1,0 +1,144 @@
+{
+  "outboundFlights": [
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": {
+        "amount": 44.9900,
+        "currencyCode": "EUR"
+      },
+      "priceType": "price",
+      "date": "2017-05-10T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-11T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-12T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-13T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": {
+        "amount": 49.9900,
+        "currencyCode": "EUR"
+      },
+      "priceType": "price",
+      "date": "2017-05-14T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-15T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "SKG",
+      "arrivalStation": "BUD",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-16T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    }
+  ],
+  "returnFlights": [
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": {
+        "amount": 79.9900,
+        "currencyCode": "EUR"
+      },
+      "priceType": "price",
+      "date": "2017-05-17T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-18T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-19T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-20T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": {
+        "amount": 99.9900,
+        "currencyCode": "EUR"
+      },
+      "priceType": "price",
+      "date": "2017-05-21T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-22T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    },
+    {
+      "departureStation": "BUD",
+      "arrivalStation": "SKG",
+      "price": null,
+      "priceType": "noData",
+      "date": "2017-05-23T00:00:00",
+      "classOfService": null,
+      "hasMacFlight": false
+    }
+  ]
+}
