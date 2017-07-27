@@ -12,7 +12,7 @@ use projectivemotion\PhpScraperTools\CacheScraper;
 
 class Scraper extends CacheScraper
 {
-    const default_api_version = '3.8.2';
+    const default_api_version = '6.6.2';
     protected $protocol =   'https';
     protected $domain   =   'be.wizzair.com';
 
