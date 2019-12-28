@@ -7,4 +7,4 @@ before_script:
   - composer self-update
   - composer update
 
-script: php -f demo/wizzair.php BCN CRA $(date -d 'next saturday' +%Y-%m-%d) $(date -d 'next saturday next month' +%Y-%m-%d)
+script: php -f demo/wizzair.php BCN CRA $(date -d '+15 day' +%Y-%m-%d) $(date -d '+16 day' +%Y-%m-%d)
