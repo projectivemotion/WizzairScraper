@@ -2,25 +2,26 @@
 Wizzair Airline Flights Price Scraper
 [![Build Status](https://travis-ci.org/projectivemotion/wizzair-scraper.svg?branch=master)](https://travis-ci.org/projectivemotion/wizzair-scraper)
 
-Last Verified: 2017-01-25
+Last Verified: 2019-12-28
 
 ## Use at your own risk!
 * I am not responsible for your use of this software.
 * Please do not abuse!
 * Check out my other projects: [Agoda-Scraper](https://github.com/projectivemotion/agoda-scraper), [Hotelscom-Scraper](https://github.com/projectivemotion/hotelscom-scraper), [EasyJet-Scraper](https://github.com/projectivemotion/easyjet-scraper), [Planitour-Scraper](https://github.com/projectivemotion/planitour-scraper), [Xgbs-Soap Client](https://github.com/projectivemotion/xgbs-soap)
 
-### Manual Installation
-    git clone https://github.com/projectivemotion/wizzair-scraper.git
-    cd wizzair-scraper && composer update
+### 
     
 ### Composer Installation
     composer require projectivemotion/wizzair-scraper
     
 ### Requirements
     PHP 5.6
+    Composer
 
-### Usage
-
+### Demo
+    git clone https://github.com/projectivemotion/wizzair-scraper.git
+    cd wizzair-scraper && composer update
+    
 See `demo/` directory. for an example
 
 Usage: demo/wizzair.php origin destination departure return
