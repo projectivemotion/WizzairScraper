@@ -5,6 +5,6 @@ php:
 
 before_script:
   - composer self-update
-  - composer install --prefer-source --no-interaction --dev
+  - composer update
 
 script: php -f demo/wizzair.php BCN CRA $(date -d 'next saturday' +%Y-%m-%d) $(date -d 'next saturday next month' +%Y-%m-%d)
