@@ -26,6 +26,7 @@ $origin = $argv[1];
 $destination = $argv[2];
 $departure_date = $argv[3];
 $return_date = $argv[4];
+$proxy = getenv('HTTP_PROXY');
 
 echo "Using Parameters: $origin - $destination / $departure_date - $return_date\n\n";
 
@@ -35,6 +36,12 @@ $wizzair->verboseOff();
 
 $wizzair->setAdults(1);
 $wizzair->setCookieFileName(tempnam(sys_get_temp_dir(), 'wizzaircookie.'));
+
+if($proxy){
+    echo "Using Proxy $proxy\n";
+    $proxy = explode(':', $proxy); // expected: 1.2.3.4:8888
+    $wizzair->setProxy($proxy[0], $proxy[1]);
+}
 
 $api_detected = $wizzair->detect_api_version();
 if($api_detected)
