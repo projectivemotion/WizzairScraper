@@ -56,8 +56,8 @@ class Scraper extends CacheScraper
 
     public function detect_api_version()
     {
-        $pattern    =   "#https://{$this->domain}/([0-9\\.]*?)/Api#";
-        $home_page_response =   $this->cache_get('https://wizzair.com/');
+        $pattern    =   "#https://{$this->domain}/([0-9\\.]+)#";
+        $home_page_response =   $this->cache_get('https://wizzair.com/buildnumber');
         if(preg_match($pattern, $home_page_response, $matches)){
             $this->setApiVersion($matches[1]);
             return true;
