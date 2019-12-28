@@ -32,7 +32,7 @@ echo "Using Parameters: $origin - $destination / $departure_date - $return_date\
 
 $wizzair    =   new \projectivemotion\WizzairScraper\Scraper();
 $wizzair->cacheOff();
-$wizzair->verboseOn();
+$wizzair->verboseOff();
 
 $wizzair->setAdults(1);
 $wizzair->setCookieFileName(tempnam(sys_get_temp_dir(), 'wizzaircookie.'));
@@ -54,7 +54,7 @@ try {
     echo json_encode($flights, JSON_PRETTY_PRINT);
 }catch(Exception $e)
 {
-    echo "An Error ocurred: ", $e->getMessage(), ". You may want to try changing search parameters.";
+    echo "An Error ocurred: ", $e->getMessage(), ". You may want to try changing search parameters (dates).";
     echo "\nConnection Info: ";
     var_export($wizzair->getInfo());
     exit(1);
