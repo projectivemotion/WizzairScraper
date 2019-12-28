@@ -32,7 +32,7 @@ echo "Using Parameters: $origin - $destination / $departure_date - $return_date\
 
 $wizzair    =   new \projectivemotion\WizzairScraper\Scraper();
 $wizzair->cacheOff();
-$wizzair->verboseOff();
+$wizzair->verboseOn();
 
 $wizzair->setAdults(1);
 $wizzair->setCookieFileName(tempnam(sys_get_temp_dir(), 'wizzaircookie.'));
